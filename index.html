@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+    />
+    <title>.:: WAEC Request Management System ::.</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/landing/waec logo.png"
+      type="image/x-icon"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./public/css/fonts/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/sweetalerts/sweetalert.css" />
+    <link
+      href="./css/themes/start/AwesomeMvc.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <script src="./public/js/jquery.min.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <style>
+      @media (max-width: 700px) {
+      .st {
+          display: none;
+      }
+      }
+      @media (max-width: 700px) {
+      .stcb1 {
+          display: none;
+      }
+      }
+      @media (max-width: 700px) {
+      .stcb2 {
+          display: none;
+      }
+      }
+      @media (max-width: 700px) {
+      .stcb3 {
+          display: none;
+      }
+      }
+      @media (max-width: 700px) {
+      .stcb4 {
+          display: none;
+      }
+      }
+  </style>
+
+    <style>
+      .whatsapp-link {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+
+  <body class="wrapperBg">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top landing-nav">
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="Index">
+          <img src="./public/images/logo.png" class="img-fluid" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+
+        <div
+          class="collapse navbar-collapse pb-5 pb-lg-0"
+          id="navbarTogglerDemo01"
+        >
+          <a class="navbar-brand d-none d-lg-inline-block" href="Index">
+            <img src="./public/images/logo.png" class="img-fluid" />
+          </a>
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./Home/MakeRequest">Make request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Home/TrackRequest">Track request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Home/Requery">Requery Transaction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Home/CassDetailFree"
+                >Candidate Self Service</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="btn main-btn-outline" href="./Account/Index"
+                >Portal Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <!DOCTYPE html>
+
+      <header class="hero-section">
+        <div class="container">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner" style="width: 1100px; height: 500px">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-sm-6 text-white">
+                    <div
+                      class="welcome-note my-4"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <h3 class="">
+                        <span> Welcome to </span>
+                        The West African Examinations Council
+                        <span class=""> Request Management System </span>
+                        <a href="#intro" class="btn btn-primary">Read More ...</a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 st">
+                    <img
+                      src="./public/images/Student picture.png"
+                      alt="Los Angeles"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-5 text-white">
+                    <div
+                      class="welcome-note my-4"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <h3 class="">
+                        <span> Student Service</span>
+                      </h3>
+
+                      <h4>Exam Result</h4>
+                      <p class="h4">
+                        <ul>
+                            <li>Attestation of Result (Certificate) -1983 and above
+                                (₦80,000)</li>
+                            <li>Change of Certificate Collection Point
+                                (Private Exam only) (₦13,000)</li>
+                            <li>Checking status of request
+                                (₦1,300)</li>
+                            <li>Collection of Certificate (2019 First Series)
+                                (₦6,500)</li>
+                            <li>Collection of Certificate by proxy - 2004 to
+                                2008 (Private Exam only) (₦32,500)</li>
+                            <li>Collection of Certificate by proxy - 2009 to 2013 (Private Exam only) (₦26,000)</li>
+                           
+                        </ul>
+                             
+                      </p>
+                      <hr class="text-white" />
+                      <a href="#cb1" class="btn btn-primary">Read More ...</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-7 pt-4 stcb1">
+                    <img
+                      src="./public/images/service-card-img-1.jpg"
+                      alt="Los Angeles"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-5 text-white">
+                    <div
+                      class="welcome-note my-4"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <h3 class="">
+                        <span> School Service</span>
+                      </h3>
+            
+                      <h4>Exam Services</h4>
+                      <p class="h4">
+                        <ul>
+                            <li>Change of School Name (₦130,000)</li>
+                            <li>General Enquiry/Complaint (₦1,300)</li>
+                            <li>Late upload of entry per candidate (₦6,500)</li>
+                            <li>Penalty for derecognition of school (₦650,000)</li>
+                            <li>Penalty for late upload of CASS per student (₦6,500)</li>
+                            <li>Request for lost candidate examination number (₦3,900)</li>
+                            <li> Reset of Access Password (₦2,050)</li>
+                            <li> Sale of Mathematical Tables per candidate (₦650)</li>
+                           
+                        </ul>
+                             
+                      </p>
+                      <hr class="text-white" />
+                      <a href="#cb2" class="btn btn-primary">Read More ...</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-7 pt-4 stcb2">
+                    <img
+                      src="./public/images/service-card-img-2.jpg"
+                      alt="Los Angeles"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-5 text-white">
+                    <div
+                      class="welcome-note my-4"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <h3 class="">
+                        <span> School Service</span>
+                      </h3>
+            
+                      <h4>REGISTRATION</h4>
+                      <p class="h4">
+                        <ul>
+                            <li>Amendment of Entries for Private Candidates (₦6,500)</li>
+                            <li>Chief Examiners Report per Copy (₦6,500)</li>
+                            <li>Confirmation Of CASS Subjects upload (₦2,050)</li>
+                            <li>Confirmation Of Entry and Registered Subjects (₦2,050)</li>
+                            <li> General Enquiry/Complaint (₦1,300)</li>
+                            <li> Inspection of Schools (₦325,000)</li>
+                            <li> Low Candidature Logistics (₦39,000)</li>
+                          
+                           
+                        </ul>
+                             
+                      </p>
+                      <hr class="text-white" />
+                      <a href="#cb3" class="btn btn-primary">Read More ...</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-7 pt-4 stcb3">
+                    <img
+                      src="./public/images/service-card-img-3.jpg"
+                      alt="Los Angeles"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-5 text-white">
+                    <div
+                      class="welcome-note my-4"
+                      data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine"
+                    >
+                      <h3 class="">
+                        <span>Research Service</span>
+                      </h3>
+            
+                      <h4> STATISTICS/DATA SERVICE</h4>
+                      <p class="h4">
+                        <ul>
+                            <li> Request for statistics on best student in a school per examination (₦65,000)</li>
+                            <li> Request for statistics on best student in a state per examination (₦130,000)</li>
+                            <li> Request from States for Statistics (₦130,000)</li>
+                            <li> Researchers request for statistics per examination (₦19,500)</li>
+                            <li>  WAEC Educational Statistics Portal (₦0)</li>
+                        
+                           
+                        </ul>
+                             
+                      </p>
+                      <hr class="text-white" />
+                      <a href="#cb4" class="btn btn-primary">Read More ...</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-7 pt-4 stcb4">
+                    <img
+                      src="./public/images/service-card-img-4.jpg"
+                      alt="Los Angeles"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+       
+      
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section class="">
+        <div class="py-3 intro-section" id="intro">
+          <div class="container">
+            <div class="Intro-text px-3 text-center">
+              <h4 class="pb-3 section-title">INTRODUCTION</h4>
+              <p class="section-para">
+                COVID-19 has introduced a new NORMAL to our society; Social
+                distancing and safety precautions have become sacrosanct in our
+                daily lives.
+              </p>
+
+              <p class="section-para">
+                In response to the on-going pandemic, The West African
+                Examinations Council, WAEC has introduced an online self service
+                portal that would drastically reduce physical presence of
+                candidates and the general public at any of the Council's
+                offices in Nigeria.
+              </p>
+
+              <p class="section-para">
+                The candidate simply purchases a customer support ticket online
+                to access services and also track the status of their request.
+                The system allows candidate and the general public to interact
+                with WAEC from the comfort of their homes without compromising
+                safety measures.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="text-center pb-5">
+            <div class="container">
+                <div class="row justify-content-center" style="margin: 0 auto; min-height: 305px;">
+                    <div class="col-lg-12 col-sm-11 col-12 tokenBgInfo pb-4">
+                        <h5 class="py-4">Do you know there are two types of request tokens?</h5>
+                        <div class="row justify-content-center" style="margin: 0 auto;">
+                            <div class="col-lg-10 col-sm-10 col-12">
+                                
+                                <p>
+                                    <span style="color:black;font-weight:bold">REQUEST FOR INFORMATION</span>
+                                    <br/>
+                                    
+                                    This only gives you the necessary information and requirements that must be met before you apply for service request. For instance, if you buy token to request information about Attestation of Result, the token will only give you information on requirements and necessary documents you need to provide to access this service.
+                                    <br />
+                                    The token does not give you access to make request for the service itself.
+                                </p>
+                                <p>
+                                    <span style="color:black;font-weight:bold">REQUEST FOR SERVICE</span>
+                                    <br />
+                                    
+                                    This token gives you access to apply for a service request. It is expedient you already have all necessary requirements needed to apply for the service request.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="py-5 token-type-section">
+          <div class="container">
+            <h5
+              class="text-center section-title px-3"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              Do you know there are two types of request tokens?
+            </h5>
+            <div class="row px-3">
+              <div class="col-lg-6">
+                <div class="card p-md-5 p-3 border-0 token-type-card">
+                  <div class="title-row">
+                    <div class="number no-1" data-aos="zoom-in">1</div>
+                    <h5
+                      class="card-title mb-0"
+                      data-aos="fade-up"
+                      data-aos-duration="800"
+                    >
+                      REQUEST FOR INFORMATION
+                    </h5>
+                  </div>
+                  <p
+                    class="card-text"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                  >
+                    This only gives you the necessary information and
+                    requirements that must be met before you apply for service
+                    request. For instance, if you buy token to request
+                    information about Attestation of Result, the token will only
+                    give you information on requirements and necessary documents
+                    you need to provide to access this service. The token does
+                    not give you access to make request for the service itself.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card p-md-5 p-3 border-0 token-type-card">
+                  <div class="title-row">
+                    <div class="number no-2" data-aos="zoom-in">2</div>
+                    <h5
+                      class="card-title mb-0"
+                      data-aos="fade-up"
+                      data-aos-duration="800"
+                    >
+                      REQUEST FOR SERVICE
+                    </h5>
+                  </div>
+                  <p
+                    class="card-text"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                  >
+                    This token gives you access to apply for a service request.
+                    <br />
+                    It is expedient you already have all necessary requirements
+                    needed to apply for the service request.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center py-5 has-a-token">
+          <div class="container">
+            <h5
+              class="section-title mb-0"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              Already have a Token?
+            </h5>
+            <div class="px-3 mx-auto">
+              <div class="my-5">
+                <p class="mb-0" data-aos="fade-up" data-aos-duration="800">
+                  If you have bought a token, you have completed the first step.
+                  Next, kindly click on Make Request button to select your
+                  request type and complete the process. You can always track
+                  the status of your request by clicking on the Track Request
+                  button
+                </p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div>
+                  <a
+                    class="btn main-btn-flat mr-4"
+                    style="text-decoration: none"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    href="/Home/Requery"
+                  >
+                    Re-query Transaction
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    class="btn main-btn-flat mr-4"
+                    style="text-decoration: none"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    href="/Home/CassDetail"
+                  >
+                    CASS Confirmation
+                  </a>
+                </div>
+                <div>
+                  <a
+                    class="btn main-btn-flat mr-4"
+                    style="text-decoration: none"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    href="/Home/RegistrationDetail"
+                  >
+                    Registration Entry Confirmation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container py-5" id="purchase-token">
+          <h5
+            class="section-title text-center mb-5"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            Services
+          </h5>
+          <div class="row">
+            <div class="col-lg-6 col-12 mb-5">
+              <div
+                class="card service__card"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <div class="position-relative">
+                  <div class="overlay"></div>
+                  <img
+                    src="./public/images/service-card-img-1.jpg"
+                    class="card-img"
+                  />
+                </div>
+
+                <div class="card-body" id="cb1">
+                  <h5 class="title">EXAM RESULT</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Attestation of Result (Certificate) -1983 and above
+                      (&#x20A6;80,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Change of Certificate Collection Point (Private Exam only)
+                      (&#x20A6;13,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Checking status of request (&#x20A6;1,300)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of Certificate (2019 First Series)
+                      (&#x20A6;6,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of Certificate by proxy - 2004 to 2008 (Private
+                      Exam only) (&#x20A6;32,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of Certificate by proxy - 2009 to 2013 (Private
+                      Exam only) (&#x20A6;26,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of Certificate by proxy - 2014 to 2018 (Private
+                      Exam only) (&#x20A6;19,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of Certificate by proxy -2003 backwards
+                      (Private Exam only) (&#x20A6;39,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of Certificate by proxy (2019, First Series)
+                      (&#x20A6;13,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of certificate for 2009 to 2013 (Private Exam
+                      only) (&#x20A6;19,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of Certificate for 2014 to 2018 (Private Exam
+                      only) (&#x20A6;13,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of certificate for year 2003 backwards
+                      (&#x20A6;32,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Collection of certificate for year 2004 to 2008 (Private
+                      Exam only) (&#x20A6;26,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Confirmation of Result (international) (&#x20A6;52,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Confirmation of Result (local) (&#x20A6;19,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Confirmation of Result to African countries &amp; Embassy
+                      in Nigeria (&#x20A6;39,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Consolidated Result request from University on CD
+                      (&#x20A6;390,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      General Enquiry/Complaint (&#x20A6;1,300)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a href="https://www.waec.org/" target="_blank">
+                        Online Verification of Result (&#x20A6;7,500)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Re-printing of Result listing per school (&#x20A6;65,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a href="https://certrequest.waec.ng/" target="_blank">
+                        Request for Certificate for Private Cand 2019 - Second
+                        Series to date (&#x20A6;8,200)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Result Printout for revalidated result (&#x20A6;13,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Verification of Result per candidate (for institutions,
+                      organisations etc) (&#x20A6;2,600)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a href="https://www.waec.org" target="_blank">
+                        WAEC Digital Certificate (&#x20A6;0)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a
+                    class="btn main-btn"
+                    href="./Home/PurchaseToken?servid=405"
+                  >
+                    Purchase token
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-5">
+              <div
+                class="card service__card"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <div class="position-relative">
+                  <div class="overlay"></div>
+                  <img
+                    src="./public/images/service-card-img-2.jpg"
+                    class="card-img"
+                  />
+                </div>
+
+                <div class="card-body" id="cb2">
+                  <h5 class="title">EXAM SERVICE</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Change of School Name (&#x20A6;130,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      General Enquiry/Complaint (&#x20A6;1,300)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Late upload of entry per candidate (&#x20A6;6,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Penalty for derecognition of school (&#x20A6;650,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Penalty for late upload of CASS per student
+                      (&#x20A6;6,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Request for lost candidate examination number
+                      (&#x20A6;3,900)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Reset of Access Password (&#x20A6;2,050)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Sale of Mathematical Tables per candidate (&#x20A6;650)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a
+                        href="https://request.waec.ng/home/resultcheckerbulk"
+                        target="_blank"
+                      >
+                        Sale of WAEC Direct Result Checker (&#x20A6;4,250)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a
+                        href="https://request.waec.ng/home/resultcheckerbulk"
+                        target="_blank"
+                      >
+                        Sale of WAEC Direct Result Checker (Bulk)
+                        (&#x20A6;4,250)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Use of WAEC internet facility by school per candidate
+                      (&#x20A6;1,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Very Late upload of entry (&#x20A6;13,000)
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a
+                    class="btn main-btn"
+                    href="./Home/PurchaseToken?servid=406"
+                  >
+                    Purchase token
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-5">
+              <div
+                class="card service__card"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <div class="position-relative">
+                  <div class="overlay"></div>
+                  <img
+                    src="./public/images/service-card-img-3.jpg"
+                    class="card-img"
+                  />
+                </div>
+
+                <div class="card-body" id="cb3">
+                  <h5 class="title">REGISTRATION</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Amendment of Entries for Private Candidates
+                      (&#x20A6;6,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Chief Examiners Report per Copy (&#x20A6;6,500)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a
+                        href="https://request.waec.ng/Home/CassDetail"
+                        target="_blank"
+                      >
+                        Confirmation Of CASS Subjects upload (&#x20A6;2,050)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a
+                        href="https://request.waec.ng/Home/RegistrationDetail"
+                        target="_blank"
+                      >
+                        Confirmation Of Entry and Registered Subjects
+                        (&#x20A6;2,050)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      General Enquiry/Complaint (&#x20A6;1,300)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Guidelines for Recognition of school Booklet
+                      (&#x20A6;13,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Inspection of Schools (&#x20A6;325,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Low Candidature Logistics (&#x20A6;39,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Penalty for Additional Supervisor (&#x20A6;39,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Re-Inspection of Schools (&#x20A6;130,000)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Registration and Syllabus per copy (&#x20A6;5,200)
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      Sale of Computer time for registration (&#x20A6;910)
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a
+                    class="btn main-btn"
+                    href="./Home/PurchaseToken?servid=404"
+                  >
+                    Purchase token
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 mb-5">
+              <div
+                class="card service__card"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                <div class="position-relative">
+                  <div class="overlay"></div>
+                  <img
+                    src="./public/images/service-card-img-4.jpg"
+                    class="card-img"
+                  />
+                </div>
+
+                <div class="card-body" id="cb4">
+                  <h5 class="title">STATISTICS/DATA SERVICE</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a href="https://waec.edustat.ng/" target="_blank">
+                        Request for statistics on best student in a school per
+                        examination (&#x20A6;65,000)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a href="https://waec.edustat.ng/" target="_blank">
+                        Request for statistics on best student in a state per
+                        examination (&#x20A6;130,000)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a href="https://waec.edustat.ng/" target="_blank">
+                        Request from States for Statistics (&#x20A6;130,000)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a href="https://waec.edustat.ng/" target="_blank">
+                        Researchers request for statistics per examination
+                        (&#x20A6;19,500)</a
+                      >
+                    </li>
+                    <li class="list-group-item pl-0 border-0 bg-transparent">
+                      <i class="fas fa-check"></i>
+                      <a href="https://waec.edustat.ng" target="_blank">
+                        WAEC Educational Statistics Portal (&#x20A6;0)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <a
+                    class="btn main-btn"
+                    href="./Home/PurchaseToken?servid=407"
+                  >
+                    Purchase token
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div style="float:right;margin: -21px -37px 7px 1px">
+            <a style="background-color:#2B105D;color:whitesmoke" class="btn" asp-controller="Account" asp-action="Index">Portal Login</a>
+        </div> -->
+      </section>
+      <a
+        class="whatsapp-link"
+        aria-label="Chat with WAEC Bot"
+        href="https://wa.me/2348179439269?textHello"
+        target="_blank"
+      >
+        <img
+          alt="Chat on WhatsApp"
+          src="./public/images/ChatOnWhatsAppButton/WhatsAppButtonGreenLarge.svg"
+        />
+      </a>
+    </div>
+
+    <footer class="outerFooter">
+      <p class="mb-0">Copyright (c) WAEC 2021 / All Right Reserved</p>
+    </footer>
+
+    <!-- script links -->
+    <script src="./public/js/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./plugins/sweetalerts/sweetalert.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="./js/AwesomeMvc.js" type="text/javascript"></script>
+    <script src="./js/awem.js" type="text/javascript"></script>
+    <script src="./js/utils.js" type="text/javascript"></script>
+
+    <script>
+      $(function () {});
+    </script>
+
+    <script>
+      $(".tooltip-r").tooltip();
+    </script>
+  </body>
+</html>
